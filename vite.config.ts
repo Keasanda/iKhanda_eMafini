@@ -10,5 +10,6 @@ export default defineConfig({
     port: process.env.PORT ? parseInt(process.env.PORT) : 3000,
     host: true, // Listen on 0.0.0.0 for cloud deployment
     open: true,
+    allowedHosts: ['ikhanda-emafini.onrender.com'], // <-- Add this line
   },
 });
